@@ -1,144 +1,59 @@
-/* Halloween Color Variables */
-:root {
-    --halloween-orange: #FF6B1A;
-    --halloween-purple: #6B1A6B;
-    --halloween-black: #1A1A1A;
-    --halloween-green: #4CAF50;
-    --blood-red: #8B0000;
-    --ghost-white: #F8F8FF;
-    --pumpkin-orange: #FFA500;
-    --spooky-gray: #2F2F2F;
-}
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    background-color: #1A1A1A;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(237,111,28,1) 0%, rgba(31,30,32,1) 0%, rgba(0,0,0,1) 0%, rgba(134,64,17,1) 100%);
     color: #F8F8FF;
-    font-family: 'Creepster', 'Nosifer', cursive;
+    font-family: 'Open Sans', sans-serif
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1, h5 {
     font-family: 'Creepster', cursive;
     color: #FF6B1A;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A1A1A;
+    height: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation */
-nav {
-    background-color: #2F2F2F;
+.logo {
+    float: left;
+    height: 90px;
+    margin-left: 80px;
+}
+
+.navigation {
+    float: right;
+    background: transparent;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
 }
 
-nav a {
-    color: var(--pumpkin-orange);
-    text-decoration: none;
+.navitem {
+    color: #F8F8FF;
+    font-weight: 200;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
+    text-decoration: none;
+    margin-right: 50px;
 }
 
-nav a:hover {
-    color: var(--halloween-orange);
-    text-shadow: 0 0 8px var(--halloween-orange);
+.navitem:hover {
+    color: #FF6B1A;
 }
 
-/* Buttons */
-.spooky-button {
-    background-color: var(--halloween-purple);
-    color: var(--ghost-white);
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.spooky-button:hover {
-    background-color: var(--halloween-orange);
-    transform: scale(1.05);
-    box-shadow: 0 0 15px var(--halloween-orange);
-}
-
-/* Cards */
-.halloween-card {
-    background-color: var(--spooky-gray);
-    border: 2px solid var(--halloween-purple);
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin: 1rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.halloween-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Footer */
-footer {
-    background-color: var(--spooky-gray);
-    color: var(--ghost-white);
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-/* Animations */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
-}
-
-.floating {
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
-
-.flickering {
-    animation: flicker 2s linear infinite;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav li {
-        margin: 0.5rem 0;
-    }
-    
-    .halloween-card {
-        margin: 1rem 0;
-    }
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--halloween-black);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--halloween-purple);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--halloween-orange);
-}
 
 body.home {
     background: rgb(2,0,36);
@@ -155,3 +70,4 @@ body.home {
     font-size: 20px;
     color: #FF6B1A;
 }
+
