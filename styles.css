@@ -59,6 +59,7 @@ body.home {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(237,111,28,1) 0%, rgba(31,30,32,1) 0%, rgba(0,0,0,1) 0%, rgba(134,64,17,1) 100%);
     text-align: center;
+    
 }
 
 .htable {
@@ -91,4 +92,8 @@ body.home {
 .accordion-body {
     background-color: #FF6B1A;
     color: black
+}
+
+.headermargin {
+    margin-top: 110px;
 }
