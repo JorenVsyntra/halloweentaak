@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif
 }
 
-h1, h5 {
+h1, h2 {
     font-family: 'Creepster', cursive;
     color: #FF6B1A;
 }
@@ -71,3 +71,24 @@ body.home {
     color: #FF6B1A;
 }
 
+.accordion {
+    width: 80%;
+    background-color: black;
+    color: #FF6B1A;
+    padding-left: 8%;
+}
+
+.accordion-button {
+    background-color: black;
+    color: #FF6B1A;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: black;
+    color: #FF6B1A;
+}
+
+.accordion-body {
+    background-color: #FF6B1A;
+    color: black
+}

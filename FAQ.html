@@ -6,13 +6,6 @@
     <title>FAQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .faqcontent {
-            display: block;
-            margin-top: 110px; /* ensure the panels start below the navmenu ribbon */
-            padding-left: 8%;
-        }
-    </style>
 </head>
 <body>
     <div class="header">
@@ -26,40 +19,70 @@
             <a href="contact.html" class="navitem">Contact</a>
         </div>
     </div>
-    <div class="faqcontent">
+    <div class="headermargin">
         <h1>Goed om te weten</h1>
-        <h5>Gaat het gevaarlijk zijn?</h5>
-        <ul>
-            <li>
-                De vuurshows spelen zich allemaal af op een <b>veilige afstand</b> tussen het publiek. Tussen de speellocaties zijn vuurverlichte paadjes
-            </li>
-        </ul>
-        <h5>Hoe weet ik waar op het domein de spektakels plaatsvinden?</h5>
-        <ul>
-            <li>
-                Aan de toegang en de infostand krijg je uiteraard een <b>programmafolder</b> met de speeltijden.
-            </li>
-        </ul>
-        <h5>Waar moet ik parkeren?</h5>
-        <ul>
-            <li>
-                <b>Gratis parkeervoorzieningen</b> gelegen rond het kasteeldomein en ook gratis parkeervoorziening voor fietsers tegenover het Kasteeldomein.
-            </li>
-        </ul>
-        <h5>Kan ik iets eten of drinken?</h5>
-        <ul>
-            <li>
-                Bij Bar Veertien kan je op het kasteeldomein terecht voor een hapje en een drankje
-            </li>
-        </ul>
-        <h5>Wat als het regent?</h5>
-        <ul>
-            <li>
-                Bij <b>regenweer</b> voorziet de organisatie een aangepast beperkt programma!
-            </li>
-        </ul>
     </div>
-
+    <div class="accordion" id="accordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Gaat het gevaarlijk zijn?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    De vuurshows spelen zich allemaal af op een <b>veilige afstand</b> tussen het publiek. Tussen de speellocaties zijn vuurverlichte paadjes
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Hoe weet ik waar op het domein de spektakels plaatsvinden?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Aan de toegang en de infostand krijg je uiteraard een <b>programmafolder</b> met de speeltijden.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Waar moet ik parkeren?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <b>Gratis parkeervoorzieningen</b> gelegen rond het kasteeldomein en ook gratis parkeervoorziening voor fietsers tegenover het Kasteeldomein.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Kan ik iets eten of drinken?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Bij Bar Veertien kan je op het kasteeldomein terecht voor een hapje en een drankje
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Wat als het regent?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Bij <b>regenweer</b> voorziet de organisatie een aangepast beperkt programma!
+                </div>
+            </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
