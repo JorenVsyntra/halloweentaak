@@ -32,7 +32,7 @@ h1, h2 {
 .logo {
     float: left;
     height: 90px;
-    margin-left: 80px;
+    margin-left: 8%;
 }
 
 .navigation {
@@ -96,4 +96,8 @@ body.home {
 
 .headermargin {
     margin-top: 110px;
+}
+
+.ftitelpadding {
+    padding-left: 8%;
 }
