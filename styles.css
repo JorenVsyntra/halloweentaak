@@ -10,45 +10,27 @@
     --spooky-gray: #2F2F2F;
 }
 
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Base Styles */
 body {
-    background-color: var(--halloween-black);
-    color: var(--ghost-white);
+    background-color: #1A1A1A;
+    color: #F8F8FF;
     font-family: 'Creepster', 'Nosifer', cursive;
-    line-height: 1.6;
 }
 
-/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Creepster', cursive;
-    color: var(--halloween-orange);
-    text-shadow: 2px 2px 4px var(--halloween-purple);
-    margin-bottom: 1rem;
+    color: #FF6B1A;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 1rem;
 }
 
 /* Navigation */
 nav {
-    background-color: var(--spooky-gray);
+    background-color: #2F2F2F;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
 }
 
 nav a {
