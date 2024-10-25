@@ -1,0 +1,159 @@
+/* Halloween Color Variables */
+:root {
+    --halloween-orange: #FF6B1A;
+    --halloween-purple: #6B1A6B;
+    --halloween-black: #1A1A1A;
+    --halloween-green: #4CAF50;
+    --blood-red: #8B0000;
+    --ghost-white: #F8F8FF;
+    --pumpkin-orange: #FFA500;
+    --spooky-gray: #2F2F2F;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--halloween-black);
+    color: var(--ghost-white);
+    font-family: 'Creepster', 'Nosifer', cursive;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Creepster', cursive;
+    color: var(--halloween-orange);
+    text-shadow: 2px 2px 4px var(--halloween-purple);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--spooky-gray);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--pumpkin-orange);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--halloween-orange);
+    text-shadow: 0 0 8px var(--halloween-orange);
+}
+
+/* Buttons */
+.spooky-button {
+    background-color: var(--halloween-purple);
+    color: var(--ghost-white);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.spooky-button:hover {
+    background-color: var(--halloween-orange);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--halloween-orange);
+}
+
+/* Cards */
+.halloween-card {
+    background-color: var(--spooky-gray);
+    border: 2px solid var(--halloween-purple);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.halloween-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--spooky-gray);
+    color: var(--ghost-white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.flickering {
+    animation: flicker 2s linear infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.5rem 0;
+    }
+    
+    .halloween-card {
+        margin: 1rem 0;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--halloween-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--halloween-purple);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--halloween-orange);
+}
