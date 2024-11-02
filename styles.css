@@ -101,3 +101,11 @@ body.home {
 .ftitelpadding {
     padding-left: 8%;
 }
+
+.aparagraph {
+    margin-left: 25%;
+    margin-right: 400px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
